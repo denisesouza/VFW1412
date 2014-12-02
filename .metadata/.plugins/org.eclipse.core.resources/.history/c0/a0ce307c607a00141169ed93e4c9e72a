@@ -3,7 +3,7 @@
  */
 
 var songs = ["Wheels on the Bus", "Twinkle Twinkle Little Star", "Humpty Dumpty", "Itsy Bitsy Spider", "Baa Baa Black Sheep", "Ring around the Rosie"];
-var length = songs.length;
+var length = myArray.length;
 var i = -1;
 var margin = 20;
 
@@ -13,7 +13,7 @@ var displayNext = function(){
 	if(i === length -1){
 		i = -1;
 	};
-	mainMessage.text = songs[i];
+	mainMessage.text = myArray[i];
 };
 
 
@@ -23,7 +23,7 @@ var displayPrevious = function(){
 	if(i === length -1){
 		i = -1;
 	};
-	mainMessage.text = songs[i];
+	mainMessage.text = myArray[i];
 };
 
 
