@@ -29,9 +29,8 @@ var mainView = Ti.UI.createView({
 var mainMessage = Ti.UI.createLabel({
 	text: "Click Next to see your favorite childhood songs",
 	color: "#000",
-	font: {fontsize: 14, fontFamily: "ChalkboardSE-Bold"},
+	font: {fontsize:48, fontFamily: "ChalkboardSE-Bold"},
 	textAlign: "center"
-	
 });
 
 //Previous Button

@@ -31,7 +31,6 @@ var mainMessage = Ti.UI.createLabel({
 	color: "#000",
 	font: {fontsize: 14, fontFamily: "ChalkboardSE-Bold"},
 	textAlign: "center"
-	
 });
 
 //Previous Button

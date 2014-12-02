@@ -29,9 +29,8 @@ var mainView = Ti.UI.createView({
 var mainMessage = Ti.UI.createLabel({
 	text: "Click Next to see your favorite childhood songs",
 	color: "#000",
-	font: {fontsize: 14, fontFamily: "ChalkboardSE-Bold"},
+	font: {fontsize:20, fontFamily: "ChalkboardSE-Bold"},
 	textAlign: "center"
-	
 });
 
 //Previous Button
@@ -41,6 +40,7 @@ var previousButton = Ti.UI.createView({
 	width: 125,
 	borderRadius: 4,
 	borderColor: "#000",
+	borderRadius: 4,
 	borderWidth: 1,
 	bottom: 50,
 	left: 10
@@ -53,6 +53,7 @@ var nextButton = Ti.UI.createView({
 	width: 125,
 	borderRadius: 4,
 	borderColor: "#000",
+	borderRadius: 4,
 	borderWidth: 1,
 	bottom: 50,
 	right: 10
@@ -62,7 +63,7 @@ var nextButton = Ti.UI.createView({
 var previousText = Ti.UI.createLabel({
 	text: "Previous",
 	color: "#000",
-	font: {fontsize:14, fontFamily: "ChalkboardSE-Bold"},
+	font: {fontsize:14, fontFamily: "ChalkboardSE-Bold", fontWeight: "bold"},
 	textAlign: "center"
 	
 });
@@ -71,7 +72,7 @@ var previousText = Ti.UI.createLabel({
 var nextText = Ti.UI.createLabel({
 	text: "Next",
 	color: "#000",
-	font: {fontsize:14, fontFamily: "ChalkboardSE-Bold"},
+	font: {fontsize:14, fontFamily: "ChalkboardSE-Bold", fontWeight: "bold"},
 	textAlign: "center"
 	
 });
