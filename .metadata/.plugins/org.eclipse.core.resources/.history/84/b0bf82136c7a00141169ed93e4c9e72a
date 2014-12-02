@@ -29,7 +29,7 @@ var mainView = Ti.UI.createView({
 var mainMessage = Ti.UI.createLabel({
 	text: "Click Next to see your favorite childhood songs",
 	color: "#000",
-	font: {fontsize:24, fontFamily: "Courier", fontWeight: "bold"},
+	font: {fontsize:20, fontFamily: "NuevaStd-Bold", fontWeight: "bold"},
 	textAlign: "center"
 });
 
@@ -79,14 +79,11 @@ var nextText = Ti.UI.createLabel({
 
 
 
-
-
-
 //main code and require file
 var loadFile = require("kidSongs");
 
 mainView.add(mainMessage);
-mainWindow.add (mainView,previousButton, nextButton);
+mainWindow.add (mainView,mainMessage,previousButton, nextButton);
 previousButton.add(previousText);
 nextButton.add(nextText);
 mainWindow.open();

@@ -5,7 +5,7 @@
 var songs = ["Wheels on the Bus", "Twinkle Twinkle Little Star", "Humpty Dumpty", "Itsy Bitsy Spider", "Baa Baa Black Sheep", "Ring around the Rosie"];
 var length = songs.length;
 var i = -1;
-
+var margin = 20;
 
 
 //function for displaying text by clicking the next button
@@ -14,7 +14,7 @@ var displayNext = function(){
 		i = -1;
 	};
 i++;
-	mainMessage.text = songs[i];
+	songText.text = songs[i];
 };
 
 
@@ -26,7 +26,7 @@ var displayPrevious = function(){
 	};
 i--;	
 	
-	mainMessage.text = songs[i];
+	songText.text = songs[i];
 };
 
 

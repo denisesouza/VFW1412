@@ -29,7 +29,7 @@ var mainView = Ti.UI.createView({
 var mainMessage = Ti.UI.createLabel({
 	text: "Click Next to see your favorite childhood songs",
 	color: "#000",
-	font: {fontsize:24, fontFamily: "Courier", fontWeight: "bold"},
+	font: {fontsize:20, fontFamily: "NuevaStd-Bold", fontWeight: "bold"},
 	textAlign: "center"
 });
 
@@ -77,6 +77,12 @@ var nextText = Ti.UI.createLabel({
 	
 });
 
+var songText = Ti.Ui.createLabel({
+	songs: ["Wheels on the Bus", "Twinkle Twinkle Little Star", "Humpty Dumpty", "Itsy Bitsy Spider", "Baa Baa Black Sheep", "Ring around the Rosie"],
+	color: "#000",
+	font: {fontsize:20, fontFamily: "NuevaStd-Bold", fontWeight: "bold"},
+	textAlign: "center"
+});
 
 
 
