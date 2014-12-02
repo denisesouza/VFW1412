@@ -11,7 +11,7 @@
 //Background
 var mainWindow = Ti.UI.createWindow({
 	backgroundColor: "#c2c2c2",
-	backgroundRepeat: "true"
+	backgroundRepeat: "true",
 });
 
 //Main view window

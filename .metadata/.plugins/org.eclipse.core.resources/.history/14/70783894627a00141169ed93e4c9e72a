@@ -6,12 +6,12 @@
 // colors used #ffffff #ff5202 #0073ff #49ad0d
 
 
-//Ti.UI.setBackgroundColor("#000");
+Ti.UI.setBackgroundColor("#000");
 
 //Background
 var mainWindow = Ti.UI.createWindow({
-	backgroundColor: "#c2c2c2",
-	backgroundRepeat: "true"
+	backgroundColor: "#fff",
+	backgroundRepeat: "true",
 });
 
 //Main view window
@@ -29,7 +29,7 @@ var mainView = Ti.UI.createView({
 var mainMessage = Ti.UI.createLabel({
 	text: "Click Next to see your favorite childhood songs",
 	color: "#000",
-	font: {fontsize:16, fontFamily: "Chalkboard SE Bold", fontWeight: "bold"},
+	font: {fontsize:14, fontFamily: "chalkboard", fontWeight: "bold"},
 	textAlign: "center"
 });
 
@@ -48,7 +48,7 @@ var previousButton = Ti.UI.createView({
 
 //Next Button
 var nextButton = Ti.UI.createView({
-	backgroundColor: "#0073ff",
+	backgroundColor: "#49ad0d",
 	height: 50,
 	width: 125,
 	borderRadius: 4,
