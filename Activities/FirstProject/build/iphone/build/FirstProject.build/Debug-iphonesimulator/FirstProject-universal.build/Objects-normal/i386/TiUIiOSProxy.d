@@ -1,0 +1,60 @@
+dependencies: \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIiOSProxy.m \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIiOSProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiBase.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiThreading.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiPublicAPI.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiEvaluator.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/KrollContext.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/headers/TiCore/TiCore.h \
+  headers/TiCore/Ti.h headers/TiCore/TiBase.h \
+  headers/TiCore/TiContextRef.h headers/TiCore/TiObjectRef.h \
+  headers/TiCore/TiValueRef.h headers/TiCore/WebKitAvailability.h \
+  headers/TiCore/TiStringRef.h headers/TiCore/TiStringRefCF.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/headers/TiCore/TiContextRefPrivate.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/KrollCallback.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/KrollObject.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIiOSAdViewProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIViewProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiViewProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIView.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiAnimation.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiPoint.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiDimension.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiColor.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/ListenerEntry.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiModule.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUtils.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/WebFont.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiFile.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiBuffer.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiBlob.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/LayoutConstraint.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiGradient.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiRect.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiViewTemplate.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/Webcolor.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIiOSTransitionAnimationProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIiOSAttributedStringProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/Ti3DMatrix.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIiOSCoverFlowViewProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIiOSToolbarProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiToolbar.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIiOSTabbedBarProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIiOSDocumentViewerProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiUIiOSNavWindowProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiWindowProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiTab.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiTabGroup.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiViewController.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiControllerProtocols.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiAnimatorProxy.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiSnapBehavior.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiPushBehavior.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiGravityBehavior.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiAnchorAttachBehavior.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiViewAttachBehavior.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiCollisionBehavior.h \
+  /Users/SWEETD/Documents/Titanium_Studio_Workspace/FirstProject/build/iphone/Classes/TiDynamicItemBehavior.h
