@@ -1,0 +1,18 @@
+/**
+ * @author Denise Souza
+ */
+//My own jukebox - kids sign-a-longs - Project1
+// colors used #ffffff #ff5202 #0073ff #49ad0d
+
+
+Ti.UI.setBackgroundColor("#99b3d2");
+
+//Background
+var mainWindow = Ti.UI.createWindow({
+	backgroundColor: "#c8d2dd",
+	backgroundRepeat: "true",
+});
+
+
+
+mainWindow.open();

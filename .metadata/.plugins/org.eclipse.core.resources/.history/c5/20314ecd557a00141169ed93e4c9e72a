@@ -1,0 +1,41 @@
+/**
+ * @author Denise Souza
+ */
+//My own jukebox - kids sign-a-longs - Project1
+// colors used #ffffff #ff5202 #0073ff #49ad0d
+
+
+Ti.UI.setBackgroundColor("#000");
+
+//Background
+var mainWindow = Ti.UI.createWindow({
+	backgroundColor: "#c8d2dd",
+	backgroundRepeat: "true",
+});
+
+//Main view window
+var mainView = Ti.UI.createView({
+	backgroundColor: "#ff5202",
+	borderColor: "#000",
+	borderRadius: 4,
+	borderWidth: 1,
+	height: 400,
+	width: 300,
+	top: 40
+});
+
+//Text label for main view
+var mainMessage = Ti.UI.createLabel({
+	text: "Click Next to see your favorite childhood songs",
+	color: "#000",
+	font: {fontsize:14, fontFamily: "grinched", fontWeight: "bold"},
+	top: 10,
+	left: 10,
+	bottom: 10
+});
+
+
+
+//main code
+mainWindow.add(mainView, mainMessage);
+mainWindow.open();
