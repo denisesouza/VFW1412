@@ -6,6 +6,7 @@
 // colors used #ffffff #ff5202 #0073ff #49ad0d
 
 
+//Ti.UI.setBackgroundColor("#000");
 
 //Background
 var mainWindow = Ti.UI.createWindow({
@@ -84,7 +85,7 @@ var nextText = Ti.UI.createLabel({
 var loadFile = require("kidSongs");
 
 mainView.add(mainMessage);
-mainWindow.add (mainView, previousButton, nextButton);
+mainWindow.add (mainView,previousButton, nextButton);
 previousButton.add(previousText);
 nextButton.add(nextText);
 mainWindow.open();
