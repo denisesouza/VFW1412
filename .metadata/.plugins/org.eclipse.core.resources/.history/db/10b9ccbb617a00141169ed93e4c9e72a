@@ -23,8 +23,8 @@ i++;
 var displayPrevious = function(){
 	if(i === 0){
 		i = length;
-	};
-i--;	
+		};
+	i--;	
 	
 	mainMessage.text = songs[i];
 };

@@ -13,7 +13,6 @@ var displayNext = function(){
 	if(i === length -1){
 		i = -1;
 	};
-i++;
 	mainMessage.text = songs[i];
 };
 
@@ -21,11 +20,9 @@ i++;
 
 //function for displaying text by clicking the previous button
 var displayPrevious = function(){
-	if(i === 0){
-		i = length;
+	if(i === length -1){
+		i = -1;
 	};
-i--;	
-	
 	mainMessage.text = songs[i];
 };
 
