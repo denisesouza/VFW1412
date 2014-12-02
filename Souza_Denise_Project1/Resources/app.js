@@ -79,7 +79,9 @@ var nextText = Ti.UI.createLabel({
 
 
 
-//main code
+//main code and require file
+var loadFile = require("kidSongs");
+
 mainView.add(mainMessage);
 mainWindow.add (mainView,previousButton, nextButton);
 previousButton.add(previousText);
