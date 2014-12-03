@@ -1,7 +1,5 @@
 /**
  * @author Denise Souza
- * * VFW1412
- * Project 1
  */
 
 var songs = ["Wheels on the Bus", "Twinkle Twinkle Little Star", "Humpty Dumpty", "Itsy Bitsy Spider", "Baa Baa Black Sheep", "Ring around the Rosie"];
