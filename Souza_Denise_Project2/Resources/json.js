@@ -43,13 +43,13 @@ var trainings = {
 //Function to create a new window
 
 var getTraining = function(){
-	var newWindow = Ti.UI.createWindow({
+	var createNewWindow = Ti.UI.createWindow({
 		backgroundColor: "#f5f5f5"
 	});
 	
 //Title View
 
-	var titleView = Ti.UI.createView({
+	var createTitleView = Ti.UI.createView({
 		backgroundColor: "#fff",
 		top: 20,
 		height: 50
@@ -57,7 +57,7 @@ var getTraining = function(){
 
 //Title Text
 
-	var titleText - Ti.UI.createLabel({
+	var createTitleText = Ti.UI.createLabel({
 		text: this.title,
 		textAlign: "center",
 		font: (fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold")
@@ -65,9 +65,9 @@ var getTraining = function(){
 	
 //Border
 
-	var border = Ti.UI.createView({
+	var createBorder = Ti.UI.createView({
 		backgroundColor:"#e5e5e5",
-		top: titleView.top + titleText.height,
+		top: createTitleView.top + createTitleText.height,
 		height: 1,
 	});
 	
@@ -98,18 +98,18 @@ var getTraining = function(){
 //Function to close new window
 
 	var closeWindow = function(){
-		newWindow.close();
+		createNewWindow.close();
 		
 	};
 	
 
 //MAIN CODE
 
-	closeButton.addEventListener("click", coseWindow);
+	closeButton.addEventListener("click", closeWindow);
 	
-	tilteView.add(titleText);
-	newWindow.add(titleView, border, titleText, closeButton);
-	makeWindow.open();
+	createTilteView.add(createTitleText);
+	createNewWindow.add(createTitleView, createBorder, createTitleText, closeButton);
+	createNewWindow.open();
 	
 // for loops to run through training details
 
@@ -125,12 +125,14 @@ for (var i=0; i=trainings.Athlete Training.length; i++){
 
 for (var i=0; i=trainings.Softball Trainings.length; i++){
 	var row = Ti.UI.createTableViewRow({
-		title: trainings.Softball Trainings.trainingDetails[i].title,
-		menu: trainings.Athlete Trainings.trainingDetails[i].details,
+		title: trainings.Softball Training.trainingDetails[i].title,
+		menu: trainings.Softball Training.trainingDetails[i].details,
 		hasChild: true	
 	});
-	athleteSection.add(row);
+	softballSection.add(row);
 	row.addEventListener("click",getTraining);
+};
+
 	
 		
 
