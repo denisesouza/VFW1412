@@ -113,26 +113,12 @@ var getTraining = function(){
 	
 // for loops to run through training details
 
-for (var i=0; i=trainings.Athlete Training.length; i++){
+for (var i=0; i=trainings.Athlete Trainings.length; i++){
 	var row = Ti.UI.createTableViewRow({
-		title: trainings.Athlete Training.trainingDetails[i].title,
-		menu: trainings.Athlete Training.trainingDetails[i].details,
-		hasChild: true	
-	});
-	athleteSection.add(row);
-	row.addEventListener("click",getTraining);
-};
-
-for (var i=0; i=trainings.Softball Trainings.length; i++){
-	var row = Ti.UI.createTableViewRow({
-		title: trainings.Softball Trainings.trainingDetails[i].title,
+		title: trainings.Athlete Trainings.trainingDetails[i].title,
 		menu: trainings.Athlete Trainings.trainingDetails[i].details,
 		hasChild: true	
-	});
-	athleteSection.add(row);
-	row.addEventListener("click",getTraining);
-	
-		
+});
 
 	
 	

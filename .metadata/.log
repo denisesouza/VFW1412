@@ -11892,3 +11892,749 @@ java.lang.StringIndexOutOfBoundsException: String index out of range: 0
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:19:25.785
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:19:30.803
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:19:45.839
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:19:48.851
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:19:55.367
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:19:57.378
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:20:02.393
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:20:04.404
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:20:05.914
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:20:13.434
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:20:14.443
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:20:20.961
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:20:23.471
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:20:25.982
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:20:27.993
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:21:36.629
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:21:49.661
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:21:51.169
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:21:53.681
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:21:55.190
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:21:56.198
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:21:57.205
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:00.718
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:10.244
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:11.254
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:12.263
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:13.772
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:17.282
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:18.789
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:20.296
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:21.301
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:27.316
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:31.330
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:37.348
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:49.374
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:22:51.888
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:23:04.413
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:23:20.948
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:23:22.958
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:23:24.468
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.runParticipants(CommonReconcilingStrategy.java:341)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:277)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.reconcile(CommonReconcilingStrategy.java:235)
+	at com.aptana.editor.common.text.reconciler.CommonReconcilingStrategy.fullReconcile(CommonReconcilingStrategy.java:477)
+	at com.aptana.editor.common.text.reconciler.CommonReconciler.process(CommonReconciler.java:162)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY com.aptana.index.core 4 0 2014-12-06 18:23:25.010
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  String index out of range: 0
+!STACK 0
+java.lang.StringIndexOutOfBoundsException: String index out of range: 0
+	at java.lang.String.charAt(String.java:686)
+	at com.aptana.internal.index.core.DiskIndex.writeDocumentNames(DiskIndex.java:1737)
+	at com.aptana.internal.index.core.DiskIndex.mergeWith(DiskIndex.java:902)
+	at com.aptana.index.core.Index.save(Index.java:698)
+	at com.aptana.index.core.Index.save(Index.java:671)
+	at com.aptana.core.internal.build.IndexBuildParticipant.buildEnding(IndexBuildParticipant.java:84)
+	at com.aptana.core.internal.build.LazyBuildParticipant.buildEnding(LazyBuildParticipant.java:67)
+	at com.aptana.core.build.UnifiedBuilder.buildEnding(UnifiedBuilder.java:230)
+	at com.aptana.core.build.UnifiedBuilder.build(UnifiedBuilder.java:201)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:733)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
