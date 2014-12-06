@@ -95,31 +95,7 @@ var getTraining = function(){
 		textAlign: "center"
 	});
 
-//Function to close new window
-
-	var closeWindow = function(){
-		newWindow.close();
-		
-	};
-	
-
-//MAIN CODE
-
-	closeButton.addEventListener("click", coseWindow);
-	
-	tilteView.add(titleText);
-	newWindow.add(titleView, border, titleText, closeButton);
-	makeWindow.open();
-	
-// for loops to run through training details
-
-for (var i=0; i=trainings.Athlete Trainings.length; i++){
-	var row = Ti.UI.createTableViewRow({
-		title: trainings.Athlete Trainings.trainingDetails[i].title,
-		menu: trainings.Athlete Trainings.trainingDetails[i].details,
-		hasChild: true	
-});
-
+//Function to close 
 	
 	
 	
