@@ -33,7 +33,7 @@ var titleText = Ti.UI.createLabel({
 var border = Ti.UI.createView({
 		backgroundColor:"#e5e5e5",
 		top: titleView.top + titleView.height,
-		height: 2,
+		height: 1,
 	});
 	
 	
@@ -50,12 +50,7 @@ if(Ti.Platform.name === "iPhone OS"){
 //Athlete Training Section
 var athleteSection = Ti.UI.createTableViewSection({
 	headerTitle: "Athlete Training",
-	footerTitle: "Information & Pricing",
-	font: {fontSize: 10, fontFamily:"Helvetica"},
-	top: 20,
-	bottom: 20,
-	height: 25
-	
+	footerTitle: "Information & Pricing"
 });
 
 
@@ -63,10 +58,6 @@ var athleteSection = Ti.UI.createTableViewSection({
 var softballSection = Ti.UI.createTableViewSection({
 	headerTitle: "Softball Training",
 	footerTitle: "Information & Pricing",
-	font: {fontSize: 10, fontFamily:"Helvetica"},
-	top: 20, //no matter what I set this too can't figure out spacing
-	bottom: 20,
-	height: 25
 });
 	
 	

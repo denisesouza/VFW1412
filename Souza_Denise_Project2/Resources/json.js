@@ -111,7 +111,6 @@ var getInfo = function(){
 	};
 	
 	
-	
 //MAIN CODE
 	closeButton.addEventListener("click", closeWindow);
 	
@@ -119,7 +118,7 @@ var getInfo = function(){
 	detailWindow.add(createTitleView, createBorder, info, closeButton);
 	detailWindow.open();
 };
-	
+
 	
 // for loops to run through training details
 
@@ -142,3 +141,6 @@ for (var i=0; i<trainings.SoftballTraining.trainingDetails.length; i++){
 	softballSection.add(row);
 	row.addEventListener("click", getInfo);
 };
+
+
+	
