@@ -13,6 +13,7 @@ var mainWindow = Ti.UI.createWindow({
 });
 
 
+
 //Title
 var titleView = Ti.UI.createView({
 	backgroundColor: "#fff",
