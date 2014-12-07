@@ -64,7 +64,7 @@ var softballSection = Ti.UI.createTableViewSection({
 	headerTitle: "Softball Training",
 	footerTitle: "Information & Pricing",
 	font: {fontSize: 10, fontFamily:"Helvetica"},
-	top: 20, //no matter what I set this too can't figure out spacing
+	top: 50, //no matter what I set this too can't figure out spacing
 	bottom: 20,
 	height: 25
 });
