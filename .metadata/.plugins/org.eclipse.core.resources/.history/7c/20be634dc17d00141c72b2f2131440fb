@@ -64,8 +64,8 @@ var softballSection = Ti.UI.createTableViewSection({
 	headerTitle: "Softball Training",
 	footerTitle: "Information & Pricing",
 	font: {fontSize: 10, fontFamily:"Helvetica"},
-	top: 50,
-	bottom: 20,
+	top: 20,
+	bottom: 10,
 	height: 25
 });
 	
