@@ -37,9 +37,11 @@ var border = Ti.UI.createView({
 	});
 	
 	
+	
 //Table View
 var trainingTable = Ti.UI.createTableView({
 	top: titleView.top + titleView.height
+	
 	
 });
 
@@ -62,9 +64,9 @@ var softballSection = Ti.UI.createTableViewSection({
 	headerTitle: "Softball Training",
 	footerTitle: "Information & Pricing",
 	font: {fontSize: 10, fontFamily:"Helvetica"},
-	top: 10,
+	top: 20,
 	bottom: 10,
-	height: 25,
+	height: 25
 });
 	
 	
