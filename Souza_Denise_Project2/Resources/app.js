@@ -17,7 +17,7 @@ var mainWindow = Ti.UI.createWindow({
 var titleView = Ti.UI.createView({
 	backgroundColor: "#fff",
 	top: 20,
-	height: 50	
+	height: 40
 });
 
 
@@ -25,35 +25,46 @@ var titleView = Ti.UI.createView({
 var titleText = Ti.UI.createLabel({
 		text: "Trainings",
 		textAlign: "center",
-		font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"}
+		font: {fontSize: 20, fontFamily:"Helvetica", fontWeight: "bold"}
 });
 	
 	
 //Border
 var border = Ti.UI.createView({
 		backgroundColor:"#e5e5e5",
-		top: titleView.top + titleText.height,
-		height: 1,
+		top: titleView.top + titleView.height,
+		height: 2,
 	});
 	
 	
 //Table View
 var trainingTable = Ti.UI.createTableView({
-	top: border.top + border.height
+	top: titleView.top + titleView.height
+	
 });
+
 
 
 //Athlete Training Section
 var athleteSection = Ti.UI.createTableViewSection({
 	headerTitle: "Athlete Training",
-	footerTitle: "Information & Pricing"
+	footerTitle: "Information & Pricing",
+	font: {fontSize: 10, fontFamily:"Helvetica"},
+	top: 10,
+	bottom: 10,
+	height: 25
+	
 });
 
 
 //Softball Training Section
 var softballSection = Ti.UI.createTableViewSection({
 	headerTitle: "Softball Training",
-	footerTitle: "Information & Pricing"
+	footerTitle: "Information & Pricing",
+	font: {fontSize: 10, fontFamily:"Helvetica"},
+	top: 10,
+	bottom: 10,
+	height: 25,
 });
 	
 	
@@ -67,7 +78,7 @@ trainingTable.setData(trainingSections);
 var loadfile = require("json");
 
 //MAIN CODE
-mainWindow.add(titeView, border, trainingTable);
+mainWindow.add(titleView, border, trainingTable);
 titleView.add(titleText);
 mainWindow.open();
 
