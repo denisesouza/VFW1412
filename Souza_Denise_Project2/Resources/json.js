@@ -39,16 +39,25 @@ var trainings = {
 			}
 		]
 	},
-	
-//Function to create a new window
 
-var getTraining = function(){
-	var createNewWindow = Ti.UI.createWindow({
+
+var mainWindow = Ti.UI.createWindow({
+	title: "Training Info",
+	backgroundColor: "#f5f5f5"
+});
+
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWindow
+});
+
+//Function to create a new window
+var getInfo = function(){
+	var detailWindow = Ti.UI.createWindow({
 		backgroundColor: "#f5f5f5"
-	});
+};
+	
 	
 //Title View
-
 	var createTitleView = Ti.UI.createView({
 		backgroundColor: "#fff",
 		top: 20,
@@ -56,15 +65,14 @@ var getTraining = function(){
 });
 
 //Title Text
-
 	var createTitleText = Ti.UI.createLabel({
 		text: this.title,
 		textAlign: "center",
 		font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"}
 	});
 	
+	
 //Border
-
 	var createBorder = Ti.UI.createView({
 		backgroundColor:"#e5e5e5",
 		top: createTitleView.top + createTitleText.height,
@@ -72,7 +80,6 @@ var getTraining = function(){
 	});
 	
 //Training Information
-
 	var info = Ti.UI.createLable({
 		text: this.details,
 		color: "#323232",
@@ -82,8 +89,9 @@ var getTraining = function(){
 		right: 10
 	});
 	
+	
+	
 //Close Button
-
 	var closeButton = Ti.UI.createLabel({
 		text: "Close Window",
 		backgroundColor: "#333",
@@ -95,21 +103,20 @@ var getTraining = function(){
 		textAlign: "center"
 	});
 
-//Function to close new window
 
+//Function to close new window
 	var closeWindow = function(){
-		createNewWindow.close();
+		navWindow.close();
 		
 	};
 	
 
 //MAIN CODE
-
 	closeButton.addEventListener("click", closeWindow);
 	
 	createTilteView.add(createTitleText);
-	createNewWindow.add(createTitleView, createBorder, createTitleText, closeButton);
-	createNewWindow.open();
+	mainWindow.add(createTitleView, createBorder, createTitleText, closeButton);
+	navWindow.openWindow(detailWindow);
 	
 // for loops to run through training details
 
@@ -120,17 +127,17 @@ for (var i=0; i=trainings.Athlete Training.length; i++){
 		hasChild: true	
 	});
 	athleteSection.add(row);
-	row.addEventListener("click",getTraining);
+	row.addEventListener("click", getInfo);
 };
 
-for (var i=0; i=trainings.Softball Trainings.length; i++){
+for (var i=0; i=trainings.Softball Training.length; i++){
 	var row = Ti.UI.createTableViewRow({
 		title: trainings.Softball Training.trainingDetails[i].title,
 		menu: trainings.Softball Training.trainingDetails[i].details,
 		hasChild: true	
 	});
 	softballSection.add(row);
-	row.addEventListener("click",getTraining);
+	row.addEventListener("click", getInfo);
 };
 
 	
