@@ -40,20 +40,20 @@ var border = Ti.UI.createView({
 	
 //Table View
 var trainingTable = Ti.UI.createTableView({
-	top: titleView.top + titleView.height	
+	top: titleView.top + titleView.height
+	
+	
 });
 
-if(Ti.Platform.name === "iPhone OS"){
-	trainingTable.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
-}
+
 
 //Athlete Training Section
 var athleteSection = Ti.UI.createTableViewSection({
 	headerTitle: "Athlete Training",
 	footerTitle: "Information & Pricing",
 	font: {fontSize: 10, fontFamily:"Helvetica"},
-	top: 20,
-	bottom: 20,
+	top: 10,
+	bottom: 10,
 	height: 25
 	
 });
