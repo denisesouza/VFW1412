@@ -8,13 +8,12 @@
 Ti.UI.setBackgroundColor("#000");
 
 //Background
-
 var mainWindow = Ti.UI.createWindow({
 	backgroundColor: "#f5f5f5"
 });
 
-//Title
 
+//Title
 var titleView = Ti.UI.createView({
 	backgroundColor: "#fff",
 	top: 20,
@@ -23,16 +22,14 @@ var titleView = Ti.UI.createView({
 
 
 //Title Text
-
 var titleText = Ti.UI.createLabel({
 		text: "Trainings",
 		textAlign: "center",
-		font: (fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold")
+		font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"}
 });
 	
 	
 //Border
-
 var border = Ti.UI.createView({
 		backgroundColor:"#e5e5e5",
 		top: titleView.top + titleText.height,
@@ -41,7 +38,6 @@ var border = Ti.UI.createView({
 	
 	
 //Table View
-
 var trainingTable = Ti.UI.createTableView({
 	top: border.top + border.height
 });

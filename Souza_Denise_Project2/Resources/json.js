@@ -60,7 +60,7 @@ var getTraining = function(){
 	var createTitleText = Ti.UI.createLabel({
 		text: this.title,
 		textAlign: "center",
-		font: (fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold")
+		font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"}
 	});
 	
 //Border
@@ -76,7 +76,7 @@ var getTraining = function(){
 	var info = Ti.UI.createLable({
 		text: this.details,
 		color: "#323232",
-		font: (fontSize: 20, fontFamily:"Helvetica", fontWeight: "bold"),
+		font: {fontSize: 20, fontFamily:"Helvetica", fontWeight: "bold"},
 		top: border.height + border.top + 50,
 		left: 10,
 		right: 10
@@ -89,7 +89,7 @@ var getTraining = function(){
 		backgroundColor: "#333",
 		color: "#fff",
 		height: 10,
-		font: (fontSize: 20, fontFamily:"Helvetica", fontWeight: "bold"),
+		font: {fontSize: 20, fontFamily:"Helvetica", fontWeight: "bold"},
 		width: "100%",
 		bottom: 0,
 		textAlign: "center"
