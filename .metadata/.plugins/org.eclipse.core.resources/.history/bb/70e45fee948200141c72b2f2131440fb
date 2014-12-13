@@ -211,4 +211,4 @@ pic.open();
 };	
 
 //adding event listener to get back to main Image Gallery
-mainButton.addEventListener("click", getImageGallery);
+menuButton.addEventListener("click", getImageGallery);

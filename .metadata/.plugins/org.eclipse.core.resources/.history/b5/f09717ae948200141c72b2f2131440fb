@@ -175,40 +175,4 @@ var picLabel = Ti.UI.createLabel({
 	
 	
 	
-//creating border for individual picutres once opened
-var border = Ti.UI.createView({
-	backgroundColor: "#000",
-	top: galleryTitle.top + galleryTitle.height,
-	height: 1,
-});
 	
-
-//creating a close button to close the window of individual thumbnail
-var closeButton = Ti.UI.createLabel({
-		text: "Close",
-		backgroundColor: "#333",
-		color: "#fff",
-		height: 50,
-		font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"},
-		width: "100%",
-		bottom: 0,
-		textAlign: "center"
-	});
-	
-	
-//function to close  window
-var closeWindow = function(){
-	pic.close();
-};	
-	
-	
-//MAIN CODE to open picture
-closeButton.addEventListener("click", closeWindow);
-galleryTitle.add(galleryText);
-pic.add(galleryTitle, border, closeButton, picLabel, newImage);
-pic.open();
-
-};	
-
-//adding event listener to get back to main Image Gallery
-mainButton.addEventListener("click", getImageGallery);
