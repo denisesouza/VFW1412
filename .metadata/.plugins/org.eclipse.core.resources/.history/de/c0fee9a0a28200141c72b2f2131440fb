@@ -101,7 +101,7 @@ for (var i=0; i<imageFiles.length; i++){
 //Creating image views
 var newImage = Ti.UI.createImageView({
 	image: "images/" + imageFiles[i],
-	top: 0,
+	top: 20,
 	width: thumbNail.width*2,
 	borderRadius: 8
 });
@@ -161,8 +161,7 @@ var galleryText = Ti.UI.createLabel({
 //creating picture views for when the picture opens up
 var newImage = Ti.UI.createImageView({
 	image: dataSource,
-	top: 100,
-	bottom: 90,
+	top: 200,
 	left: 10,
 	right: 10,
 	borderRadius: 8
@@ -172,7 +171,7 @@ var newImage = Ti.UI.createImageView({
 //creating picture view lables for individual pictures 
 var picLabel = Ti.UI.createLabel({
 	text: dataSource,
-	bottom: 60,
+	bottom: 100,
 	textAlign: "center"
 });
 	

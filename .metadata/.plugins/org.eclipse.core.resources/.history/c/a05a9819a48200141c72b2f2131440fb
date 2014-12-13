@@ -172,7 +172,7 @@ var newImage = Ti.UI.createImageView({
 //creating picture view lables for individual pictures 
 var picLabel = Ti.UI.createLabel({
 	text: dataSource,
-	bottom: 60,
+	bottom: 100,
 	textAlign: "center"
 });
 	

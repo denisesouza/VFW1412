@@ -7,15 +7,13 @@
 //Global Variables
 var pWidth = Ti.Platform.displayCaps.platformWidth;
 var pHeight = Ti.Platform.displayCaps.platformHeight;
-var itemCount = 30;  //number of thumbnail images
+var itemCount = 30;
 var rowCount = 4;
 var margin = 10;
-var spacing = 10;
-var numberOfSpace = (rowCount + 1) * spacing;    //math for spacing of thumbnails
+var spacing = 5;
+var numberOfSpace = (rowCount + 1) * spacing;
 var width = (pWidth - numberOfSpace) / rowCount;
 var position = position + (width + spacing);
-//var width = pWidth - margin * (rowCount +1);
-//var size = width / rowCount;
 
 //file system get file
 var imageList = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images");
@@ -42,7 +40,7 @@ var galleryTitle = Ti.UI.createView({
 //Creating Text for Title of Gallery
 var galleryText = Ti.UI.createLabel({
 	text: "Athlete & Event Pictures",
-	color: "#000",
+	color: "#fff",
 	textAlign: "center",
 	font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"}
 });
@@ -51,7 +49,7 @@ var galleryText = Ti.UI.createLabel({
 
 //Creating border for gallery
 var border = Ti.UI.createView({
-	backgroundColor: "#fff",
+	backgroundColor: "#000",
 	top: galleryTitle.top + galleryTitle.height,
 	height: 1,
 });
@@ -113,8 +111,8 @@ container.add(thumbNail);
 
 
 //Use of even propagation for the images
-container.addEventListener("click", function (event){
-	openPicture(event.source.image);
+contain.addEventListener("click", function (event){
+	getPicture(event.source.image);
 });
 
 
@@ -152,7 +150,7 @@ var galleryTitle = Ti.UI.createView({
 //Creating Text for title of individual picture
 var galleryText = Ti.UI.createLabel({
 	text: "Athlete & Event Pictures",
-	color: "#000",
+	color: "#fff",
 	textAlign: "center",
 	font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"}
 });
@@ -161,8 +159,7 @@ var galleryText = Ti.UI.createLabel({
 //creating picture views for when the picture opens up
 var newImage = Ti.UI.createImageView({
 	image: dataSource,
-	top: 100,
-	bottom: 90,
+	top: 200,
 	left: 10,
 	right: 10,
 	borderRadius: 8
@@ -172,7 +169,7 @@ var newImage = Ti.UI.createImageView({
 //creating picture view lables for individual pictures 
 var picLabel = Ti.UI.createLabel({
 	text: dataSource,
-	bottom: 60,
+	bottom: 100,
 	textAlign: "center"
 });
 	
