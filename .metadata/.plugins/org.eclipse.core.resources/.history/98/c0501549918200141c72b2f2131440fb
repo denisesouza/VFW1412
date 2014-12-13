@@ -94,47 +94,7 @@ for (var i=0; i<imageFiles.length; i++){
 		borderRadius: 8	
 	});
 	
-
-
-//Creating image views
-var newImage = Ti.UI.createImageView({
-	image: "images/" + imageFiles[i],
-	top: 0,
-	width: thumbNail.width*2,
-	borderRadius: 8
-});
-
-//code to add thumbnail & container
-thumbNail.add(newImage);
-container.add(thumbNail);
-};
-
-
-//Use of even propagation for the images
-contain.addEventListener("click", function (event){
-	getPicture(event.source.image);
-});
-
-
-//function to close image window
-var closeWindow = function(){
-	gallery.close();
-};
-
-
-//adding event listener and main code to get image gallery
-closeButton.addEventListener("click", closeWindow);
-galleryTitle.add(galleryText);
-gallery.add(galleryTitle, border, container, closeButton);
-gallery.open();
-
-};
-
-
-//creating a function to open the picture 
-
-
-
+	
 	
 	
 	

@@ -25,8 +25,6 @@ var getImageGallery = function(){
 	var gallery = Ti.UI.createWindow({
 		backgroundColor: "#5C5C5C"
 	});
-
-
 	
 //Creating Title of Gallery
 var galleryTitle = Ti.UI.createView({
@@ -34,8 +32,6 @@ var galleryTitle = Ti.UI.createView({
 	top: 20,
 	height: 50
 });
-
-
 
 //Creating Text for Title of Gallery
 var galleryText = Ti.UI.createLabel({
@@ -45,16 +41,12 @@ var galleryText = Ti.UI.createLabel({
 	font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"}
 });
 
-
-
 //Creating border for gallery
 var border = Ti.UI.createView({
 	backgroundColor: "#000",
 	top: galleryTitle.top + galleryTitle.height,
 	height: 1,
 });
-
-
 
 //Creating close button - utilizing code from project 2
 //Close Button
@@ -81,63 +73,3 @@ var container = Ti.UI.createScrollView({
 	backgroundColor: "#828282",
 	layout: "horizontal"	
 });
-
-
-//Creating for-loop for thumbnails
-for (var i=0; i<imageFiles.length; i++){
-	var thumbNail = Ti.UI.createView({
-		backgroundColor: "#000",
-		top: margin,
-		left: margin,
-		width: width,
-		height: width,
-		borderRadius: 8	
-	});
-	
-
-
-//Creating image views
-var newImage = Ti.UI.createImageView({
-	image: "images/" + imageFiles[i],
-	top: 0,
-	width: thumbNail.width*2,
-	borderRadius: 8
-});
-
-//code to add thumbnail & container
-thumbNail.add(newImage);
-container.add(thumbNail);
-};
-
-
-//Use of even propagation for the images
-contain.addEventListener("click", function (event){
-	getPicture(event.source.image);
-});
-
-
-//function to close image window
-var closeWindow = function(){
-	gallery.close();
-};
-
-
-//adding event listener and main code to get image gallery
-closeButton.addEventListener("click", closeWindow);
-galleryTitle.add(galleryText);
-gallery.add(galleryTitle, border, container, closeButton);
-gallery.open();
-
-};
-
-
-//creating a function to open the picture 
-
-
-
-	
-	
-	
-	
-	
-	
