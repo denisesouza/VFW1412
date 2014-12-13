@@ -33,7 +33,7 @@ var mainButtonText = Ti.UI.createLabel({
 
 //MAIN CODE	
 //Loading imagelayout.js file
-var loadfile = require("imagelayout.js");
+var loadfile = require("imagelayout");
 
 
 mainWindow.add(mainButton);
