@@ -77,7 +77,7 @@ var border = Ti.UI.createView({
 var container = Ti.UI.createScrollView({
 	width: pWidth,
 	contentWidth: pWidth,
-	height: pHeight - galleryTitle.top - galleryTitle.height - closeButton.height,
+	contentHeight: pHeight - galleryTitle.top - galleryTitle.height - closeButton.height,
 	top: galleryTitle.top + galleryTitle.height + border.height,
 	showVerticalScrollIndicator: true,
 	backgroundColor: "#828282",

@@ -52,7 +52,7 @@ var galleryText = Ti.UI.createLabel({
 //Creating border for gallery
 var border = Ti.UI.createView({
 	backgroundColor: "#fff",
-	top: galleryTitle.top + galleryTitle.height,  //20 + 50
+	top: galleryTitle.top + galleryTitle.height,
 	height: 1,
 });
 
@@ -77,8 +77,8 @@ var border = Ti.UI.createView({
 var container = Ti.UI.createScrollView({
 	width: pWidth,
 	contentWidth: pWidth,
-	height: pHeight - galleryTitle.top - galleryTitle.height - closeButton.height,
-	top: galleryTitle.top + galleryTitle.height + border.height,
+	contentHeight: pHeight - galleryTitle.top - galleryTitle.height - closeButton.height,
+	//top: galleryTitle.top + galleryTitle.height + border.height,
 	showVerticalScrollIndicator: true,
 	backgroundColor: "#828282",
 	layout: "horizontal"	
@@ -112,7 +112,7 @@ container.add(thumbNail);
 };
 
 
-//Use of event propagation for the images
+//Use of even propagation for the images
 container.addEventListener("click", function (event){
 	openPicture(event.source.image);
 });
