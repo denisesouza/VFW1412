@@ -31,10 +31,8 @@ var mainButtonText = Ti.UI.createLabel({
 	
 	
 
-
-
 //MAIN CODE	
-//Loading json.js data
+//Loading imagelayout.js file
 var loadfile = require("imagelayout.js");
 
 
