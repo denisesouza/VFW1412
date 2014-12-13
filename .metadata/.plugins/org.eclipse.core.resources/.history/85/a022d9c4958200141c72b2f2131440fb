@@ -16,7 +16,7 @@ var width = (pWidth - numberOfSpace) / rowCount;
 var position = position + (width + spacing);
 
 //file system get file
-var imageList = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images");
+var imageList = Ti.Filesystem.getFile(Ti.Filesystem.resourceDirectory, "images");
 var imageFiles = imageList.getDirectoryListing();
 
 
@@ -76,7 +76,7 @@ var container = Ti.UI.createScrollView({
 	width: pWidth,
 	contentWidth: pWidth,
 	contentHeight: pHeight - galleryTitle.top - galleryTitle.height - closeButton.height,
-	top: galleryTitle.top + galleryTitle.height + border.height,
+	top: galleryTitle.top + gallertyTitle.height + border.height,
 	showVerticalScrollIndicator: true,
 	backgroundColor: "#828282",
 	layout: "horizontal"	
