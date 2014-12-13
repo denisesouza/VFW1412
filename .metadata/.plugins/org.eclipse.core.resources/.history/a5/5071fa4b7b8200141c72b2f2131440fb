@@ -30,12 +30,18 @@ var mainButtonText = Ti.UI.createLabel({
 });
 	
 	
-
+//Border
+//var border = Ti.UI.createView({
+		//backgroundColor:"#e5e5e5",
+		//top: mainButton.top + mainButton.height,
+		//height: 1,
+	//});
+	
 
 
 //MAIN CODE	
 //Loading json.js data
-var loadfile = require("imagelayout.js");
+//var loadfile = require("imagelayout.js");
 
 
 mainWindow.add(mainButton);

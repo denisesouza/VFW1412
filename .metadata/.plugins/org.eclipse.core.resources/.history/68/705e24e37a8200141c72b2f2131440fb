@@ -4,7 +4,7 @@
  * Project 3
  */
 
-Ti.UI.setBackgroundColor("#000");
+Ti.UI.setBackgroundColor("#323232");
 
 //Background
 var mainWindow = Ti.UI.createWindow({
@@ -16,7 +16,7 @@ var mainWindow = Ti.UI.createWindow({
 //Main Button
 var mainButton = Ti.UI.createView({
 	backgroundColor: "#fff",
-	height: 100,
+	height: 40,
 	width: 300,
 	borderRadius:8
 });
@@ -30,14 +30,20 @@ var mainButtonText = Ti.UI.createLabel({
 });
 	
 	
-
+//Border
+var border = Ti.UI.createView({
+		backgroundColor:"#e5e5e5",
+		top: mainButton.top + mainButton.height,
+		height: 1,
+	});
+	
 
 
 //MAIN CODE	
 //Loading json.js data
-var loadfile = require("imagelayout.js");
+//var loadfile = require("imagelayout.js");
 
 
-mainWindow.add(mainButton);
+mainWindow.add(mainButton, border);
 mainButton.add(mainButtonText);
 mainWindow.open();
