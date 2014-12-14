@@ -74,6 +74,8 @@ var border = Ti.UI.createView({
 
 
 //Creating scroll view for thumbnails
+//when code was set with contentHeight my scroll would not work
+//changed code to just height and was able to get my scroll to work again
 var container = Ti.UI.createScrollView({
 	width: pWidth,
 	contentWidth: pWidth,
