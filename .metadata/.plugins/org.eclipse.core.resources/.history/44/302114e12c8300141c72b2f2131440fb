@@ -1,0 +1,219 @@
+/**
+ * @author Denise Souza
+ * VFW1412
+ * Project 3
+ */
+
+//Global Variables
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var itemCount = 30;  //number of thumbnail images
+var rowCount = 4;
+var margin = 10;
+var spacing = 10;
+var numberOfSpace = (rowCount + 1) * spacing;    //math for spacing of thumbnails
+var width = (pWidth - numberOfSpace) / rowCount;
+var position = position + (width + spacing);
+//var width = pWidth - margin * (rowCount +1);
+//var size = width / rowCount;
+
+//file system get file
+var imageList = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images");
+var imageFiles = imageList.getDirectoryListing();
+
+
+//function to open image thumbnail gallery
+var getImageGallery = function(){
+	var gallery = Ti.UI.createWindow({
+		backgroundColor: "#5C5C5C"
+	});
+
+
+	
+//Creating Title of Gallery
+var galleryTitle = Ti.UI.createView({
+	backgroundColor: "#E5E5E5",
+	top: 20,
+	height: 50
+});
+
+
+
+//Creating Text for Title of Gallery
+var galleryText = Ti.UI.createLabel({
+	text: "Athlete & Event Pictures",
+	color: "#000",
+	textAlign: "center",
+	font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"}
+});
+
+
+
+//Creating border for gallery
+var border = Ti.UI.createView({
+	backgroundColor: "#fff",
+	top: galleryTitle.top + galleryTitle.height,  //20 + 50
+	height: 1,
+});
+
+
+
+//Creating close button - utilizing code from project 2
+//Close Button
+	var closeButton = Ti.UI.createLabel({
+		text: "Close",
+		backgroundColor: "#333",
+		color: "#fff",
+		height: 50,
+		font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"},
+		width: "100%",
+		bottom: 0,
+		textAlign: "center"
+	});
+
+
+
+//Creating scroll view for thumbnails
+//when code was set with contentHeight my scroll would not work
+//changed code to just height and was able to get my scroll to work again
+var container = Ti.UI.createScrollView({
+	width: pWidth,
+	contentWidth: pWidth,
+	height: pHeight - galleryTitle.top - galleryTitle.height - closeButton.height,
+	top: galleryTitle.top + galleryTitle.height + border.height,
+	showVerticalScrollIndicator: true,
+	backgroundColor: "#828282",
+	layout: "horizontal"	
+});
+
+
+//Creating for-loop for thumbnails
+for (var i=0; i<imageFiles.length; i++){
+	var thumbNail = Ti.UI.createView({
+		backgroundColor: "#000",
+		top: margin,
+		left: margin,
+		width: width,
+		height: width,
+		borderRadius: 8	
+	});
+	
+
+
+//Creating image views
+var newImage = Ti.UI.createImageView({
+	image: "images/" + imageFiles[i],
+	top: 0,
+	width: thumbNail.width*2,
+	borderRadius: 8
+});
+
+//code to add thumbnail & container
+thumbNail.add(newImage);
+container.add(thumbNail);
+};
+
+
+//Use of event propagation for the images
+container.addEventListener("click", function (event){
+	openPicture(event.source.image);
+});
+
+
+//function to close image window
+var closeWindow = function(){
+	gallery.close();
+};
+
+
+//adding event listener and main code to get image gallery
+closeButton.addEventListener("click", closeWindow);
+galleryTitle.add(galleryText);
+gallery.add(galleryTitle, border, container, closeButton);
+gallery.open();
+
+};
+
+
+//creating a function to open the picture 
+var openPicture = function(dataSource){
+	var pic = Ti.UI.createWindow({
+		backgroundColor: "#5C5C5C"
+	});
+
+
+//Creating Title of individual picture 
+var galleryTitle = Ti.UI.createView({
+	backgroundColor: "#E5E5E5",
+	top: 20,
+	height: 50
+});
+
+
+
+//Creating Text for title of individual picture
+var galleryText = Ti.UI.createLabel({
+	text: "Athlete & Event Pictures",
+	color: "#000",
+	textAlign: "center",
+	font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"}
+});
+
+
+//creating picture views for when the picture opens up
+var newImage = Ti.UI.createImageView({
+	image: dataSource,
+	top: 100,
+	bottom: 90,
+	left: 10,
+	right: 10,
+	borderRadius: 8
+});
+	
+	
+//creating picture view lables for individual pictures 
+var picLabel = Ti.UI.createLabel({
+	text: dataSource,
+	bottom: 60,
+	textAlign: "center"
+});
+	
+	
+	
+//creating border for individual picutres once opened
+var border = Ti.UI.createView({
+	backgroundColor: "#000",
+	top: galleryTitle.top + galleryTitle.height,
+	height: 1,
+});
+	
+
+//creating a close button to close the window of individual thumbnail
+var closeButton = Ti.UI.createLabel({
+		text: "Close",
+		backgroundColor: "#333",
+		color: "#fff",
+		height: 50,
+		font: {fontSize: 16, fontFamily:"Helvetica", fontWeight: "bold"},
+		width: "100%",
+		bottom: 0,
+		textAlign: "center"
+	});
+	
+	
+//function to close  window
+var closeWindow = function(){
+	pic.close();
+};	
+	
+	
+//MAIN CODE to open picture
+closeButton.addEventListener("click", closeWindow);
+galleryTitle.add(galleryText);
+pic.add(galleryTitle, border, closeButton, picLabel, newImage);
+pic.open();
+
+};	
+
+//adding event listener to get back to main Image Gallery
+mainButton.addEventListener("click", getImageGallery);

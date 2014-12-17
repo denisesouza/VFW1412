@@ -22,7 +22,7 @@ var mainButton = Ti.UI.createView({
 });
 
 
-//Main Button Text
+//Main Button Text 
 var mainButtonText = Ti.UI.createLabel({
 		text: "Energy No Limit Gallery",
 		textAlign: "center",
