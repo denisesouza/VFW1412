@@ -1,0 +1,15 @@
+/**
+ * @author Denise Souza
+ * VFW1412
+ * Project 4
+ */
+
+Ti.UI.setBackgroundColor("#000");
+
+//Background
+var mainWindow = Ti.UI.createWindow({
+	backgroundColor: "#323232"
+});
+
+
+mainWindow.open();
