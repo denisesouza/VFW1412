@@ -1,0 +1,25 @@
+/**
+ * @author Denise Souza
+ * VFW1412
+ * Project 4
+ */
+
+//Global Variables
+
+//file system get file
+var imageList = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "images");
+var imageFiles = imageList.getDirectoryListing();
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var currentWindow = Ti.UI.currentWindow;
+var json = require("json");
+
+
+
+
+//Main Window
+
+var mainWindow = Ti.UI.createWindow({
+	title: "Energy No Limit",
+	backgroundColor: "#BDBDBD"
+});
