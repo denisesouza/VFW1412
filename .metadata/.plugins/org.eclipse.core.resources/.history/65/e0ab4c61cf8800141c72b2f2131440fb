@@ -78,7 +78,6 @@ var submitButton = Ti.UI.createButton({
 
 submitButton.addEventListener('click',function(e)
 {
-	alert("Your information has been submitted");
    Titanium.API.info("Your information has been submitted");
 });
 	//navWindow.openWindow(yourSubmission);
