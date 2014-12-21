@@ -1,0 +1,72 @@
+/**
+ * @author Denise Souza
+ * VFW1412
+ * Project 4
+ */
+
+//Global Variables
+//file system get file
+var imageList = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "photos");
+var imageFiles = imageList.getDirectoryListing();
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+//var pHeight = Ti.Platform.displayCaps.platformHeight;
+var sectionHeight = 100;
+var buttonHeight = 100;
+var currentWindow = Ti.UI.currentWindow;
+//var json = require("json");
+
+
+Ti.UI.setBackgroundColor("#000");
+
+//Main Window // Title  // Nav  // Footer
+
+var mainWindow = Ti.UI.createWindow({
+	title: "Energy No Limit",
+	backgroundColor: "#BDBDBD"
+});
+
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWindow
+});
+
+var mainFooter = Ti.UI.createLabel({
+	text: "© by Denise Souza VFW1412",
+	textAlign: "center",
+	font: {fontSize: 20, fontFamily:"Helvetica", fontWeight: "bold"}
+});
+
+// Section 1 // Images
+
+var imageGallery = Ti.UI.createButton({
+	title: "Energy No Limit Gallery",
+	backgroundColor: "889EC5",
+	width: pWidth,
+	top: buttonHeight,
+	height: sectionHeight,
+	file: "images.js"
+});
+
+var getImageGallery = function(){
+	var gallery = Ti.UI.createWindow({
+		url: this.file,
+		title: imageGallery.title,
+		navWindowImage: this.navWindow,
+		backgroundColor: this.backgroundColor 
+	});
+
+navWindow.openWindow(gallery);
+
+};
+
+imageGallery.addEventListener("click", getImageGallery);
+
+//// Section 2 // Images
+
+
+//MAIN CODE main windows
+mainWindow.add(imageGallery);
+mainWindow.add(mainFooter);
+
+//MAIN CODE nav windows
+navWindow.add(mainWindow);
+navWindow.open();

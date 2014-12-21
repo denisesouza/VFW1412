@@ -14,7 +14,7 @@ var currentWindow = Ti.UI.currentWindow;
 
 //Creating new window for each image
 
-//var currentWindow = Ti.Ui.currentWindow;
+
 
 	var newWindow = Ti.UI.createWindow({
 		title: "Energy No Limit Gallery",
@@ -23,7 +23,7 @@ var currentWindow = Ti.UI.currentWindow;
 
 
 	var view = Ti.UI.createView({
-		backgroundColor: "#889EC5",
+		backgroundColor: "#BDBDBD",
 		top: 90,
 		width: pWidth,
 		height: 300
@@ -53,7 +53,7 @@ var currentWindow = Ti.UI.currentWindow;
 //Math logic to pick random images and not repeat same one
 
 	var nextImage = function(){
-		startImage1 = Math.floor(Math.random() * 10) +1;
+		startImage1 = Math.floor(Math.random() * 6) +1;
 		startImage.image = "photos/" + imageFiles[startImage1];
 	if(startImage1 = startImage1)
 		{

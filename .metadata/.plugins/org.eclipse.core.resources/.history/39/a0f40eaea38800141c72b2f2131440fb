@@ -1,0 +1,244 @@
+/**
+ * @author Denise Souza
+ * VFW1412
+ * Project 4
+ */
+
+//Global Variables
+//file system get file
+var imageList = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "photos");
+var imageFiles = imageList.getDirectoryListing();
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+//var pHeight = Ti.Platform.displayCaps.platformHeight;
+var sectionHeight = 100;
+var buttonHeight = 100;
+var currentWindow = Ti.UI.currentWindow;
+
+
+
+Ti.UI.setBackgroundColor("#000");
+
+//Main Window // Title  // Nav  // Footer
+
+var mainWindow = Ti.UI.createWindow({
+	title: "Energy No Limit",
+	backgroundColor: "#BDBDBD"
+});
+
+var navWindow = Ti.UI.iOS.createNavigationWindow({
+	window: mainWindow
+});
+
+var mainFooter = Ti.UI.createLabel({
+	text: "© by Denise Souza VFW1412",
+	textAlign: "center",
+	bottom: 20,
+	font: {fontSize: 14, fontFamily:"Helvetica", fontWeight: "bold"}
+});
+
+
+
+// Section 1 // Images
+
+var imageGallery = Ti.UI.createButton({
+	title: "Energy No Limit Gallery",
+	backgroundColor: "889EC5",
+	width: pWidth,
+	top: buttonHeight,
+	height: sectionHeight,
+	file: "images.js"
+});
+
+var getImageGallery = function(){
+	var gallery = Ti.UI.createWindow({
+		url: this.file,
+		title: imageGallery.title,
+		navWindowImage: this.navWindow,
+		window: this.newWindow,
+		backgroundColor: this.backgroundColor 
+	});
+
+navWindow.openWindow(gallery);
+
+};
+
+imageGallery.addEventListener("click", getImageGallery);
+
+
+
+//// Section 2 // Training Services
+
+var trainingInfo = Ti.UI.createButton({
+	title: "Training Services",
+	backgroundColor: "#756972",
+	width: pWidth,
+	top: imageGallery.top*2,
+	height: buttonHeight,
+});
+
+var getTrainingInfo = function(){
+	var trainingWindow = Ti.UI.createWindow({
+		title: "Athelete Training",
+		backgroundColor: "#BDBDBD",
+		//url: "json.js"
+	});
+
+
+//Title
+var titleView = Ti.UI.createView({
+	backgroundColor: "#fff",
+	top: 20,
+	height: 40
+});
+
+
+//Title Text
+var titleText = Ti.UI.createLabel({
+		text: "Trainings",
+		textAlign: "center",
+		font: {fontSize: 20, fontFamily:"Helvetica", fontWeight: "bold"}
+});
+	
+	
+//Border
+var border = Ti.UI.createView({
+		backgroundColor:"#e5e5e5",
+		top: titleView.top + titleView.height,
+		height: 1,
+	});
+	
+	
+//Table View
+var trainingTable = Ti.UI.createTableView({
+	top: titleView.top + titleView.height	
+});
+
+if(Ti.Platform.name === "iPhone OS"){
+	//trainingTable.style = Ti.UI.iPhone.TableViewStyle.GROUPED;
+}
+
+//Training Section header & footer
+var athleteSection = Ti.UI.createTableViewSection({
+	headerTitle: "Athlete Training",
+	footerTitle: "Information & Pricing"
+});
+
+
+var getDetail = function(){
+	var descriptionMainWindow = Ti.UI.createWindow({
+		title: this.title,
+		font: {fontSize: 14, fontFamily:"Helvetica", fontWeight: "bold"},
+		backgroundColor: "#BDBDBD"	
+	});
+	
+var showPrice =Ti.UI.createImageView({
+	image: this.img,
+	top: 25,
+	width: 75,
+	height: 75
+});
+
+var details = Ti.UI.createLabel({
+	text: this.desc,
+	font: {fontSize: 14, fontFamily:"Helvetica", fontWeight: "bold"},
+	top: 100,
+	left: 5,
+	right: 5
+});
+
+
+var priceLevelAthlete = Ti.UI.createView({
+	bottom: 100,
+	width: pWidth,
+	height: 45,
+	backgroundColor: "#fff"
+});
+
+var priceLevelAdult = Ti.UI.createView({
+	bottom: 100,
+	width: this.val * 3, 
+	height: 45,
+	backgroundColor: "fff",
+	left: 0
+});
+
+var althletePriceLabel = Ti.UI.createLabel({
+	text: "Athlete Pricing",
+	font: {fontSize: 14, fontFamily:"Helvetica", fontWeight: "bold"},
+	bottom: priceLevelAdult.bottom + priceLevelAdult.height + 15,
+	textAlign: "center"
+});
+
+var adultPriceLabel = Ti.UI.createLabel({
+	text: "Adult Pricing",
+	font: {fontSize: 14, fontFamily:"Helvetica", fontWeight: "bold"},
+	bottom: priceLevelAdult.bottom - 25,
+	textAlign: "center"	
+});
+
+descriptionMainWindow.add(adultPriceLabel,althletePriceLabel,priceLevelAdult,priceLevelAthlete);
+descriptionMainWindow.add(details);
+descriptionMainWindow.add(showPrice);
+navWindow.openWindow(descriptionMainWindow);
+
+};
+
+for (var i=0; i<trainings.AthleteTraining.trainingDetails.length; i++){
+	var row = Ti.UI.createTableViewRow({
+		title: trainings.AthleteTraining.trainingDetails[i].title,
+		details: trainings.AthleteTraining.trainingDetails[i].details,
+		hasChild: true	
+	});
+	
+	if(Ti.Platform.name === "iPhone OS"){
+		row.hasChild = false;
+		row.hasDetail = true;
+	
+	athleteSection.add(row);
+	row.addEventListener("click", getInfo);
+	};
+};
+
+
+//Array to add Training Table 
+var trainingSections = [athleteSection, softballSection];
+
+//Adding the appropriate sections to the correct tables
+trainingTable.setData(trainingSections);
+
+
+getTrainingInfo.add(trainingTable);
+navWindow.openWindow(getTrainingInfo);
+
+};
+
+trainingInfo.addEventListener("click", getTrainingInfo);
+
+//Loading json.js data
+var loadfile = require("json");
+
+
+
+
+
+
+
+
+navWindow.openWindow(training);
+
+};
+
+
+
+
+
+//MAIN CODE main windows
+mainWindow.add(imageGallery,trainingInfo);
+trainingWindow.add(titleView, border, trainingTable);
+titleView.add(titleText);
+mainWindow.add(mainFooter);
+titleView.add(titleText);
+
+//MAIN CODE nav windows
+navWindow.add(mainWindow,training);
+navWindow.open();
