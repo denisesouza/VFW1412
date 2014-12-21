@@ -30,7 +30,7 @@ var textArea1 = Ti.UI.createTextArea({
 	font:{fontSize: 14, fontFamily:"Helvetica", fontWeight: "bold"},
 	returnKeyType: Ti.UI.RETURNKEY_GO,
 	textAlign: 'left',
-	value: 'Name',
+	value: 'Name:',
 	top: 45,
 	width: 300,
 	height: 40
@@ -44,7 +44,7 @@ var textArea2 = Ti.UI.createTextArea({
 	font:{fontSize: 14, fontFamily:"Helvetica", fontWeight: "bold"},
 	returnKeyType: Ti.UI.RETURNKEY_GO,
 	textAlign: 'left',
-	value: 'Address',
+	value: 'Address:',
 	top: textArea1.top*2,
 	width: 300,
 	height: 40
@@ -58,11 +58,13 @@ var textArea3 = Ti.UI.createTextArea({
 	font:{fontSize: 14, fontFamily:"Helvetica", fontWeight: "bold"},
 	returnKeyType: Ti.UI.RETURNKEY_GO,
 	textAlign: 'left',
-	value: 'Email',
+	value: 'Email:',
 	top: textArea2.top*1.5,
 	width: 300,
 	height: 40
 });
+
+
 
 //Adding Submit Button
 

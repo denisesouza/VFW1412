@@ -6,6 +6,7 @@
  
 //JSON DATA
 var currentWindow = Ti.UI.currentWindow;
+var pWidth = Ti.Platform.displayCaps.platformWidth;
 var trainings = {
 	"AthleteTraining":{
 		"trainingDetails":[
@@ -26,11 +27,23 @@ var trainings = {
 	
 };
 
+var newWindow = Ti.UI.createWindow({
+		title: "Training Info",
+		backgroundColor: "#f5f5f5"
+	});
 
-var mainWindow = Ti.UI.createWindow({
-	title: "Training Info",
-	backgroundColor: "#f5f5f5"
-});
+
+	var view = Ti.UI.createView({
+		backgroundColor: "#BDBDBD",
+		top: 90,
+		width: pWidth,
+		height: 300
+	});	
+
+//var mainWindow = Ti.UI.createWindow({
+	//title: "Training Info",
+	//backgroundColor: "#f5f5f5"
+//});
 
 
 
@@ -44,7 +57,7 @@ var getInfo = function(){
 //Title View
 	var createTitleView = Ti.UI.createView({
 		backgroundColor: "#fff",
-		top: 20,
+	 	top: 20,
 		height: 50
 });
 
@@ -72,8 +85,10 @@ var getInfo = function(){
 		left: 10,
 		right: 10
 	});
-	
 
+
+
+	
 
 // for loops to run through training details
 
@@ -94,22 +109,24 @@ for (var i=0; i<trainings.AthleteTraining.trainingDetails.length; i++){
 		detailWindow.close();
 	};
 	
-	
+
+createTitleView.add(createTitleText);
+detailWindow.add(createTitleView, createBorder, info, closeButton);
+
+		
 //MAIN CODE
 currentWindow.add(creatTitleView, createBorder,info);
-	currentWindow.open(detailWindow);
-	currentWindow.open(mainWindow);
+currentWindow.open(detailWindow);
+currentWindow.open(newWindow);
 	
 	
-	//closeButton.addEventListener("click", closeWindow);
+	closeButton.addEventListener("click", closeWindow);
 	
-	createTitleView.add(createTitleText);
-	detailWindow.add(createTitleView, createBorder, info, closeButton);
-	detailWindow.open();
 	
-};
+	};
 
-	
+
+
 
 
 	

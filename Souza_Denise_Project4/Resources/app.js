@@ -12,6 +12,7 @@ var pWidth = Ti.Platform.displayCaps.platformWidth;
 var sectionHeight = 100;
 var buttonHeight = 100;
 var currentWindow = Ti.UI.currentWindow;
+var trainings = require ("json");
 
 
 
@@ -77,23 +78,25 @@ var trainingInfo = Ti.UI.createButton({
 	color: "#000",
 	width: pWidth,
 	top: imageGallery.top*2,
-	height: buttonHeight
+	height: buttonHeight,
+	file: "json.js"
 });
 
 var getTrainingInfo = function(){
 	var trainingWindow = Ti.UI.createWindow({
 		title: "Athlete Training",
 		navWindowImage: this.navWindow,
-		window: this.detailWindow,
+		window: this.newWindow,
 		backgroundColor: "#BDBDBD",
-		url: "json.js"
+		url: this.file
 	});
 
+trainingWindow.add(trainingTable);
 navWindow.openWindow(trainingWindow);
 
 };
 
-
+trainingInfo.addEventListener("click", getTrainingInfo);
 
 //Title
 var titleView = Ti.UI.createView({
@@ -135,6 +138,7 @@ var athleteSection = Ti.UI.createTableViewSection({
 });
 
 
+
 //Array to add Training Table 
 var trainingSections = [athleteSection];
 
@@ -144,6 +148,7 @@ trainingTable.setData(trainingSections);
 
 //Loading json.js data
 var loadfile = require("json");
+
 
 
 
@@ -176,10 +181,10 @@ navWindow.openWindow(detailForm);
 
 
 //MAIN CODE main windows
-mainWindow.add(imageGallery,trainingInfo,infoForm);
+mainWindow.add(imageGallery,trainingInfo, infoForm);
 mainWindow.add(mainFooter);
 
-trainingInfo.addEventListener("click", getTrainingInfo);
+//trainingInfo.addEventListener("click", getTrainingInfo);
 infoForm.addEventListener("click", getInfoForm);
 
 
