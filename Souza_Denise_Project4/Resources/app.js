@@ -175,10 +175,6 @@ navWindow.openWindow(detailForm);
 
 
 
-
-
-
-
 //MAIN CODE main windows
 mainWindow.add(imageGallery,trainingInfo,infoForm);
 mainWindow.add(mainFooter);
