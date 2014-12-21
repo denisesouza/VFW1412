@@ -20,8 +20,6 @@ var newWindow = Ti.UI.createWindow({
 		height: 300
 	});	
 
-
-//Adding text input fields
 var textArea1 = Ti.UI.createTextArea({
 	borderWidth: 1,
 	borderColor: "BDBDBD",
@@ -64,17 +62,7 @@ var textArea3 = Ti.UI.createTextArea({
 	height: 40
 });
 
-//Adding Submit Button
+//Adding text input fields
 
-var submitButton = Ti.UI.createButton({
-	bottom: 0,
-	height: 70,
-	title: "Submit",
-	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
-	backgroundColor: "#fff",
-	width: pWidth
-});
-
-
-currentWindow.add(textArea1, textArea2, textArea3,submitButton);
+currentWindow.add(textArea1, textArea2, textArea3);
 currentWindow.open(newWindow);

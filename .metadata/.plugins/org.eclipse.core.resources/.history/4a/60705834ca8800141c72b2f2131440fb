@@ -75,6 +75,5 @@ var submitButton = Ti.UI.createButton({
 	width: pWidth
 });
 
-
-currentWindow.add(textArea1, textArea2, textArea3,submitButton);
+currentWindow.add(textArea1, textArea2, textArea3);
 currentWindow.open(newWindow);
